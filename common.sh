@@ -43,6 +43,7 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-filter=null
     --enable-filter=setpts
     --enable-filter=trim
+    --enable-filter=aresample
 
     --disable-protocols
     --enable-protocol=file
@@ -94,6 +95,10 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-demuxer=xwma
     --enable-demuxer=dsf
 
+    --enable-muxer=pcm_s16le
+    --enable-muxer=wav
+    --enable-encoder=pcm_s16le
+    
     --enable-decoder=aac
     --enable-decoder=aac_latm
     --enable-decoder=ac3
